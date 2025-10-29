@@ -1,0 +1,44 @@
+version: '3.8'
+
+services:
+  # Ollama LLM Service
+  ollama:
+    image: ollama/ollama:latest
+    container_name: neurolearn-ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    restart: unless-stopped
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    # For CPU-only, remove the deploy section above
+
+  # NeuroLearn Application
+  neurolearn:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: neurolearn-app
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./data:/app/data
+      - ./src:/app/src
+    environment:
+      - OLLAMA_HOST=http://ollama:11434
+      - PYTHONUNBUFFERED=1
+    depends_on:
+      - ollama
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
+
+volumes:
+  ollama_data:
+

@@ -1,0 +1,9 @@
+{
+  "category": "focus_management",
+  "scenario": "Learner distracted or losing focus quickly.",
+  "when_to_use": ["focus_state=distracted", "intent=planning"],
+  "script_for_bot": "Let's try a 10-minute focus sprint. Choose one mini-task, set a timer, and silence notifications just for that sprint—not the whole hour. Afterward, log what you did and reward yourself with a short break.",
+  "rationale": "ADHD learners sustain attention better in shorter, timed intervals with immediate positive feedback.",
+  "source": "DuPaul & Weyandt (2006) ADHD in College Students; ADDitude Magazine 'Pomodoro Variations for ADHD'"
+}
+

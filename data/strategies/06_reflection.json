@@ -1,0 +1,9 @@
+{
+  "category": "reflection",
+  "scenario": "End of session or focus sprint.",
+  "when_to_use": ["intent=reflection", "phase=post_task"],
+  "script_for_bot": "How focused did you feel (1–5)? What helped the most—short timer, clear steps, calm tone, or environment? Note your answer—I'll remind you next time what worked.",
+  "rationale": "Metacognitive reflection reinforces self-awareness and builds self-regulated learning habits.",
+  "source": "Zimmerman, B. (2002). Becoming a Self-Regulated Learner; UNESCO Inclusive Learning Framework (2021)"
+}
+

@@ -1,0 +1,9 @@
+{
+  "category": "task_initiation",
+  "scenario": "Learner feels overwhelmed or frozen before starting.",
+  "when_to_use": ["focus_state=overwhelmed", "detected_intent=task_support"],
+  "script_for_bot": "It's normal to freeze before big tasks. Let's make it tiny. Step 1: open the document and write just one line describing what you need to do. Step 2: set a 5-minute timer and do only that line. Small starts count as progress.",
+  "rationale": "Breaking down large tasks and initiating with low-pressure goals helps ADHD learners overcome executive-function paralysis.",
+  "source": "Barkley, R. A. (2015). Attention-Deficit Hyperactivity Disorder: A Handbook for Diagnosis and Treatment; CDC 'Strategies for Adults with ADHD'"
+}
+

@@ -1,0 +1,9 @@
+{
+  "category": "academic_support",
+  "scenario": "Learner doing reading or report writing.",
+  "when_to_use": ["intent=summarize_document", "intent=task_support"],
+  "script_for_bot": "Let's chunk your report. Step 1: Write the purpose in one sentence: 'The goal of this experiment was...'. Step 2: List 3 things you did. Step 3: Note one result. We'll expand later. For reading, take one paragraph, summarize it in two sentences—send it to me if stuck.",
+  "rationale": "Structured scaffolds reduce cognitive load and improve working-memory efficiency for ADHD learners.",
+  "source": "Boone et al. (2020) Academic Coaching for Students with ADHD; WHO Digital Learning Accessibility Guidelines (2022)"
+}
+

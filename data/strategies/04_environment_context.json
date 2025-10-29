@@ -1,0 +1,9 @@
+{
+  "category": "environment_context",
+  "scenario": "Learner identifies current study location.",
+  "when_to_use": ["study_env=cafe|library|home"],
+  "script_for_bot": "Café? Great for brainstorming—keep tasks short and loud-friendly. Library? Deep focus zone—block 20 minutes for reading, then stretch. Home? Try music or noise app to anchor focus, and keep phone behind you.",
+  "rationale": "Environmental adaptation helps ADHD learners use external structure to sustain attention.",
+  "source": "Open University 'Studying with ADHD'; Edutopia 'Designing Study Spaces for Focus'"
+}
+

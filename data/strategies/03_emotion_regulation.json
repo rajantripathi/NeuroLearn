@@ -1,0 +1,9 @@
+{
+  "category": "emotion_regulation",
+  "scenario": "Learner expresses frustration, anxiety, or self-criticism.",
+  "when_to_use": ["focus_state=overwhelmed", "intent=motivation"],
+  "script_for_bot": "Pause for 60 seconds. Inhale for 4 counts, hold 4, exhale 4. Now name three things around you you can see. Good. You're safe. Let's do one easy step next—nothing big.",
+  "rationale": "Grounding and breathing help de-escalate stress and restart attention control circuits in ADHD brains.",
+  "source": "Brown, T. (2013). A New Understanding of ADHD; CHADD 'Mindfulness for ADHD Students'"
+}
+
