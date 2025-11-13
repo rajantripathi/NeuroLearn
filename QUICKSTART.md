@@ -55,6 +55,15 @@ Try saying:
 - Click "Summarize This"
 - Get ADHD-friendly summary
 
+### 📚 Chunk Text into Parts (NEW!)
+**Break down long texts with AI + OpenDyslexic font**
+- **Option 1**: Upload document → Click "📚 Chunk into Parts"
+- **Option 2**: Click "✂️ Chunk Text Directly" → Paste text
+- LLM analyzes and creates logical sections
+- Displayed in dyslexia-friendly OpenDyslexic font
+- Chunk size adapts to your focus state!
+- 📖 See [TEXT_CHUNKING_FEATURE.md](TEXT_CHUNKING_FEATURE.md) for details
+
 ### Reflect on Your Session
 - Rate your focus (1-5)
 - Note what helped

@@ -12,7 +12,7 @@ EMBEDDINGS_DIR = None
 SESSIONS_DIR = None
 
 # Ollama Configuration
-OLLAMA_HOST = os.getenv("OLLAMA_HOST", "http://ollama:11434")
+OLLAMA_HOST = os.getenv("OLLAMA_HOST", "http://localhost:11434")
 
 # Model Assignments
 # LLM for adaptive coaching dialogue (chat only - never for embeddings)

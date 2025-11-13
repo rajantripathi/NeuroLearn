@@ -201,10 +201,10 @@ class FocusSprint:
             Recommended duration in minutes
         """
         recommendations = {
-            "overwhelmed": 5,
-            "distracted": 10,
-            "neutral": 15,
-            "focused": 20
+            "overwhelmed": 3,
+            "distracted": 5,
+            "neutral": 8,
+            "focused": 12
         }
         
         return recommendations.get(focus_state, DEFAULT_SPRINT_DURATION)

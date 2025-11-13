@@ -3,9 +3,6 @@ FROM python:3.10-slim
 # Install system dependencies
 RUN apt-get update && apt-get install -y \
     build-essential \
-    portaudio19-dev \
-    espeak \
-    ffmpeg \
     && rm -rf /var/lib/apt/lists/*
 
 # Set working directory
@@ -20,6 +17,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy application code
 COPY src/ ./src/
 COPY data/ ./data/
+COPY font/ ./font/
 
 # Expose Streamlit port
 EXPOSE 8501

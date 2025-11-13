@@ -188,26 +188,28 @@ class DocumentHandler:
         """
         base_instruction = (
             "You are helping a university student with ADHD understand academic material. "
-            "Please provide a clear, structured summary of the following text.\n\n"
+            "Please provide a clear, comprehensive, and well-structured summary of the following text.\n\n"
         )
         
         # Adapt based on focus state
         if focus_state == "overwhelmed":
             base_instruction += (
-                "Keep it very simple. Use bullet points. "
-                "Focus only on the main idea and 2-3 key points.\n\n"
+                "Keep it simple but thorough. Use bullet points and clear sections. "
+                "Cover the main idea and 5-7 key points with brief explanations.\n\n"
             )
         elif focus_state == "distracted":
             base_instruction += (
-                "Make it brief and focused. Use clear headings. "
-                "Highlight what's most important.\n\n"
+                "Make it well-organized with clear headings and subheadings. "
+                "Include all major points and important supporting details.\n\n"
             )
         else:
             base_instruction += (
-                "Structure the summary with:\n"
-                "1. Main topic/purpose (1 sentence)\n"
-                "2. Key points (3-5 bullet points)\n"
-                "3. Important details or examples\n\n"
+                "Structure the comprehensive summary with:\n"
+                "1. Main topic/purpose (2-3 sentences)\n"
+                "2. Key concepts and ideas (7-10 detailed bullet points)\n"
+                "3. Important details, examples, and supporting information\n"
+                "4. Conclusions or implications (if applicable)\n\n"
+                "Make the summary thorough enough to understand the material deeply.\n\n"
             )
         
         prompt = base_instruction + f"Text to summarize:\n\n{text}"

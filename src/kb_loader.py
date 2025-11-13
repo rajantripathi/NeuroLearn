@@ -110,7 +110,7 @@ class KnowledgeBaseLoader:
                 result = response.json()
                 embedding = result.get("embedding", [])
                 return np.array(embedding, dtype=np.float32)
-            else:
+            else:   
                 logger.error(f"Ollama embedding error: {response.status_code}")
                 return None
                 

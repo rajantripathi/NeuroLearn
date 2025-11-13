@@ -14,7 +14,6 @@ NeuroLearn is an offline-first MVP that helps learners start tasks, stay focused
 - **Evidence-Based Strategies**: RAG-powered retrieval of ADHD learning strategies from academic sources
 - **Focus Sprints**: Timed focus sessions (5-25 minutes) with progress tracking
 - **Document Support**: Upload PDFs/documents for summarization and study help
-- **Speech I/O**: Optional voice input (Whisper) and output (pyttsx3)
 - **Privacy-First**: All data stored locally in JSON files
 - **Offline Capable**: Runs entirely on your machine via Docker
 
@@ -26,8 +25,6 @@ NeuroLearn is an offline-first MVP that helps learners start tasks, stay focused
 - **LLM**: Ollama - `llama3.1:8b` (~4.9 GB) for chat/coaching
 - **Embeddings**: Ollama - `nomic-embed-text:latest` (~274 MB) for RAG
 - **Vector Search**: FAISS (lightweight, local)
-- **Speech-to-Text**: OpenAI Whisper
-- **Text-to-Speech**: pyttsx3
 - **Storage**: JSON files (local)
 - **Deployment**: Docker Compose
 
@@ -112,8 +109,7 @@ neurolearn/
 │   ├── rag_engine.py       # RAG retrieval
 │   ├── llm_orchestrator.py # LLM interaction
 │   ├── focus_sprint.py     # Timer functionality
-│   ├── doc_handler.py      # Document processing
-│   └── speech_io.py        # STT/TTS
+│   └── doc_handler.py      # Document processing
 ├── docker-compose.yml
 ├── Dockerfile
 ├── requirements.txt
@@ -213,10 +209,6 @@ MAX_STRATEGY_RESULTS = 3  # Number of strategies to retrieve (2-3 recommended)
 ### Slow response times
 - Use a smaller model: `ollama pull llama3.2:1b`
 - Reduce `max_tokens` in `config.py`
-
-### Speech features not working
-- Check microphone permissions
-- Whisper models download on first use (may be slow)
 
 ---
 
