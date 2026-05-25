@@ -1,14 +1,24 @@
-# 🧠 NeuroLearn
+# NeuroLearn
 
 **Adaptive AI Study Coach for ADHD University Students**
 
-NeuroLearn is an offline-first MVP that helps learners start tasks, stay focused in short sprints, and manage overwhelm through evidence-based ADHD learning strategies.
+NeuroLearn is an offline-first learning-support prototype that helps students start tasks, stay focused in short sprints, and manage study overwhelm through evidence-informed ADHD learning strategies.
 
 ⚠️ **Important:** This is a study-support tool, not therapy or medical diagnosis.
 
 ---
 
-## 🌟 Features
+## Enterprise Relevance
+
+- Local-first AI workflow for privacy-sensitive education use cases
+- RAG retrieval over a curated strategy knowledge base
+- Clear separation between chat model and embedding model
+- Streamlit and Docker Compose deployment path for controlled demos
+- Explicit safety boundary: study support only, no medical diagnosis or therapy
+
+---
+
+## Features
 
 - **Adaptive Tone**: Dynamically adjusts communication style based on focus state (focused, overwhelmed, distracted)
 - **Evidence-Based Strategies**: RAG-powered retrieval of ADHD learning strategies from academic sources
@@ -19,7 +29,7 @@ NeuroLearn is an offline-first MVP that helps learners start tasks, stay focused
 
 ---
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 - **Frontend**: Streamlit
 - **LLM**: Ollama - `llama3.1:8b` (~4.9 GB) for chat/coaching
@@ -35,7 +45,7 @@ NeuroLearn is an offline-first MVP that helps learners start tasks, stay focused
 
 ---
 
-## 📦 Installation & Setup
+## Installation & Setup
 
 ### Prerequisites
 
@@ -93,7 +103,7 @@ streamlit run ui_app.py
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 neurolearn/
@@ -118,7 +128,7 @@ neurolearn/
 
 ---
 
-## 🧠 Knowledge Base
+## Knowledge Base
 
 The system includes 6 evidence-based ADHD learning strategy files:
 
@@ -133,7 +143,7 @@ The system includes 6 evidence-based ADHD learning strategy files:
 
 ---
 
-## 🚀 Usage Guide
+## Usage Guide
 
 ### 1. Set Your Focus State
 
@@ -171,7 +181,7 @@ Ask questions like:
 
 ---
 
-## 🔒 Privacy & Ethics
+## Privacy and Ethics
 
 - **No cloud logging**: All data stays on your machine
 - **Local storage**: JSON files in `data/user_sessions/`
@@ -180,7 +190,7 @@ Ask questions like:
 
 ---
 
-## ⚙️ Configuration
+## Configuration
 
 Edit `src/config.py` to customize:
 
@@ -200,7 +210,7 @@ MAX_STRATEGY_RESULTS = 3  # Number of strategies to retrieve (2-3 recommended)
 
 ---
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### "Cannot connect to Ollama"
 - Ensure Ollama service is running: `docker ps`
@@ -212,7 +222,7 @@ MAX_STRATEGY_RESULTS = 3  # Number of strategies to retrieve (2-3 recommended)
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 This is an MVP. Potential enhancements:
 
@@ -224,13 +234,13 @@ This is an MVP. Potential enhancements:
 
 ---
 
-## 📄 License
+## License
 
 MIT License - See LICENSE file
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 Built with evidence-based ADHD research from:
 - Russell Barkley
@@ -241,7 +251,4 @@ Built with evidence-based ADHD research from:
 
 ---
 
-**Built for learners, by understanding.**
-
 For support or questions, please open an issue on GitHub.
-
