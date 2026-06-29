@@ -1,5 +1,18 @@
 # NeuroLearn
 
+<!-- badges-start -->
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Python](https://img.shields.io/badge/python-3.10-blue.svg)
+![Last Commit](https://img.shields.io/github/last-commit/rajantripathi/NeuroLearn)
+![Stars](https://img.shields.io/github/stars/rajantripathi/NeuroLearn?style=social)
+![Issues](https://img.shields.io/github/issues/rajantripathi/NeuroLearn)
+![Code Style: ruff](https://img.shields.io/badge/code%20style-ruff-261230.svg)
+![adhd](https://img.shields.io/badge/adhd-informational.svg)
+![edtech](https://img.shields.io/badge/edtech-informational.svg)
+![ollama](https://img.shields.io/badge/ollama-informational.svg)
+<!-- badges-end -->
+
+
 **Adaptive AI Study Coach for ADHD University Students**
 
 NeuroLearn is an offline-first learning-support prototype that helps students start tasks, stay focused in short sprints, and manage study overwhelm through evidence-informed ADHD learning strategies.
